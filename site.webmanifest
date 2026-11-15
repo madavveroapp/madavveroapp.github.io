@@ -3,18 +3,18 @@
  "short_name": "Madavvero",
  "description": "Curiosità vere da raccontare.",
  "lang": "it",
- "start_url": "/madavveroapp/",
+ "start_url": "/",
  "display": "standalone",
  "background_color": "#080D14",
  "theme_color": "#121A26",
  "icons": [
   {
-   "src": "/madavveroapp/assets/icon-192.png",
+   "src": "/assets/icon-192.png",
    "sizes": "192x192",
    "type": "image/png"
   },
   {
-   "src": "/madavveroapp/icon.png",
+   "src": "/icon.png",
    "sizes": "512x512",
    "type": "image/png"
   }

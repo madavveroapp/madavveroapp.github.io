@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://madavveroapp.github.io/madavveroapp/sitemap.xml
+Sitemap: https://madavveroapp.github.io/sitemap.xml
