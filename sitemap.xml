@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://madavveroapp.github.io/</loc><lastmod>2026-11-14</lastmod></url>
-<url><loc>https://madavveroapp.github.io/supporto.html</loc><lastmod>2026-11-14</lastmod></url>
-<url><loc>https://madavveroapp.github.io/privacy.html</loc><lastmod>2026-11-14</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url><loc>https://madavveroapp.github.io/</loc><lastmod>2026-11-16</lastmod>
+<image:image><image:loc>https://madavveroapp.github.io/assets/screens/01-feed.jpg</image:loc></image:image>
+<image:image><image:loc>https://madavveroapp.github.io/assets/screens/02-dettaglio.jpg</image:loc></image:image>
+<image:image><image:loc>https://madavveroapp.github.io/assets/screens/03-esplora.jpg</image:loc></image:image>
+<image:image><image:loc>https://madavveroapp.github.io/assets/screens/04-parola.jpg</image:loc></image:image>
+<image:image><image:loc>https://madavveroapp.github.io/assets/screens/05-serata.jpg</image:loc></image:image>
+<image:image><image:loc>https://madavveroapp.github.io/assets/screens/06-statistiche.jpg</image:loc></image:image>
+</url>
+<url><loc>https://madavveroapp.github.io/supporto.html</loc><lastmod>2026-11-16</lastmod></url>
+<url><loc>https://madavveroapp.github.io/privacy.html</loc><lastmod>2026-11-16</lastmod></url>
 </urlset>
