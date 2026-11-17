@@ -31,7 +31,7 @@
 <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="stylesheet" href="/assets/style.css?v=1">
+<link rel="stylesheet" href="/assets/style.css?v=2">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Madavvero", "url": "https://madavveroapp.github.io/", "inLanguage": "it-IT"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Madavvero", "description": "Curiosità vere da raccontare: un feed di curiosità brevi e approfondimenti in 12 categorie, con il perché, la frase per tirarle fuori e la fonte. Ripasso, parola del giorno, Esco stasera e widget.", "operatingSystem": "iOS", "applicationCategory": "EducationalApplication", "inLanguage": "it", "image": "https://madavveroapp.github.io/icon.png", "url": "https://madavveroapp.github.io/", "author": {"@type": "Person", "name": "Antonio Rossi"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "softwareRequirements": "iOS 17.0 o successivo", "downloadUrl": "https://apps.apple.com/it/app/madavvero/id6835109542", "installUrl": "https://apps.apple.com/it/app/madavvero/id6835109542", "sameAs": ["https://apps.apple.com/it/app/madavvero/id6835109542"], "screenshot": ["https://madavveroapp.github.io/assets/screens/01-feed.jpg", "https://madavveroapp.github.io/assets/screens/02-dettaglio.jpg", "https://madavveroapp.github.io/assets/screens/03-esplora.jpg", "https://madavveroapp.github.io/assets/screens/04-parola.jpg", "https://madavveroapp.github.io/assets/screens/05-serata.jpg", "https://madavveroapp.github.io/assets/screens/06-statistiche.jpg"], "publisher": {"@type": "Person", "name": "Antonio Rossi"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Madavvero è gratis?", "acceptedAnswer": {"@type": "Answer", "text": "Sì. Tutte le curiosità e le parole del giorno sono gratis, per tutti. La versione gratuita mostra un annuncio ogni 6 curiosità. Con Madavvero Plus togli gli annunci e i limiti."}}, {"@type": "Question", "name": "Su quali dispositivi funziona?", "acceptedAnswer": {"@type": "Answer", "text": "Su iPhone con iOS 17 o successivo. L'app è in italiano."}}, {"@type": "Question", "name": "Le curiosità sono vere davvero?", "acceptedAnswer": {"@type": "Answer", "text": "Sì. Ogni curiosità è stata controllata su una fonte, come Wikipedia o il sito di un'istituzione, e la fonte è sempre indicata con il suo link. Se trovi un errore, scrivici: la correggiamo."}}, {"@type": "Question", "name": "Serve un account?", "acceptedAnswer": {"@type": "Answer", "text": "No. Non c'è nessuna registrazione: le tue salvate, i Mi piace e il ripasso restano sul tuo iPhone."}}, {"@type": "Question", "name": "Funziona anche senza internet?", "acceptedAnswer": {"@type": "Answer", "text": "Sì. Le curiosità e le parole sono già dentro l'app. La rete serve solo per aprire le fonti e, nella versione gratuita, per gli annunci."}}, {"@type": "Question", "name": "Posso disdire Plus quando voglio?", "acceptedAnswer": {"@type": "Answer", "text": "Sì, dalle Impostazioni dell'iPhone, in Abbonamenti. Se disdici durante i 7 giorni gratis dell'annuale, non paghi nulla."}}]}</script>
@@ -45,6 +45,7 @@
 <a class="nav-hide-sm" href="/#assaggio">Un assaggio</a>
 <a class="nav-hide-sm" href="/#funzioni">Funzioni</a>
 <a class="nav-hide-sm" href="/#plus">Plus</a>
+<a class="nav-hide-sm" href="/curiosita/">Curiosità</a>
 <a href="/supporto.html">Supporto</a>
 <a class="nav-cta" href="/#scarica">Scarica</a>
 </nav>
@@ -201,22 +202,23 @@
 <div class="wrap">
 <div class="section-head center">
 <h2 id="categorie-titolo">Di cosa parliamo</h2>
-<p>Dodici categorie. Scegli quelle che ti piacciono, o tienile tutte.</p>
+<p>Dodici categorie. Scegli quelle che ti piacciono, o tienile tutte. Tocca un argomento per leggere qualche curiosità.</p>
 </div>
 <ul class="chips">
-<li class="chip" style="--c:var(--c-storia)">Storia</li>
-<li class="chip" style="--c:var(--c-scienza)">Scienza</li>
-<li class="chip" style="--c:var(--c-spazio)">Spazio</li>
-<li class="chip" style="--c:var(--c-animali)">Animali</li>
-<li class="chip" style="--c:var(--c-corpo)">Corpo umano</li>
-<li class="chip" style="--c:var(--c-parole)">Parole</li>
-<li class="chip" style="--c:var(--c-cibo)">Cibo</li>
-<li class="chip" style="--c:var(--c-geografia)">Geografia</li>
-<li class="chip" style="--c:var(--c-arte)">Arte e musica</li>
-<li class="chip" style="--c:var(--c-tecnologia)">Tecnologia</li>
-<li class="chip" style="--c:var(--c-sport)">Sport</li>
-<li class="chip" style="--c:var(--c-notizie)">Capire le notizie</li>
+<li><a class="chip" style="--c:var(--c-storia)" href="/curiosita/storia.html">Storia</a></li>
+<li><a class="chip" style="--c:var(--c-scienza)" href="/curiosita/scienza.html">Scienza</a></li>
+<li><a class="chip" style="--c:var(--c-spazio)" href="/curiosita/spazio.html">Spazio</a></li>
+<li><a class="chip" style="--c:var(--c-animali)" href="/curiosita/animali.html">Animali</a></li>
+<li><a class="chip" style="--c:var(--c-corpo)" href="/curiosita/corpo-umano.html">Corpo umano</a></li>
+<li><a class="chip" style="--c:var(--c-parole)" href="/curiosita/parole.html">Parole</a></li>
+<li><a class="chip" style="--c:var(--c-cibo)" href="/curiosita/cibo.html">Cibo</a></li>
+<li><a class="chip" style="--c:var(--c-geografia)" href="/curiosita/geografia.html">Geografia</a></li>
+<li><a class="chip" style="--c:var(--c-arte)" href="/curiosita/arte-e-musica.html">Arte e musica</a></li>
+<li><a class="chip" style="--c:var(--c-tecnologia)" href="/curiosita/tecnologia.html">Tecnologia</a></li>
+<li><a class="chip" style="--c:var(--c-sport)" href="/curiosita/sport.html">Sport</a></li>
+<li><a class="chip" style="--c:var(--c-notizie)" href="/curiosita/capire-le-notizie.html">Capire le notizie</a></li>
 </ul>
+<p class="chips-more"><a class="btn btn-ghost" href="/curiosita/">Leggi le curiosità per argomento</a></p>
 </div>
 </section>
 
@@ -366,6 +368,7 @@
 <ul>
 <li><a href="/#assaggio">Un assaggio</a></li>
 <li><a href="/#funzioni">Funzioni</a></li>
+<li><a href="/curiosita/">Curiosità da raccontare</a></li>
 <li><a href="/#widget">Widget</a></li>
 <li><a href="/#plus">Madavvero Plus</a></li>
 </ul>

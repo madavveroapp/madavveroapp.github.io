@@ -186,6 +186,11 @@ p, li { text-wrap: pretty; }
   margin-left: 6px;
 }
 .site-nav .nav-cta:hover { color: var(--on-amber); background: var(--amber-strong); }
+.site-nav a { white-space: nowrap; }
+/* Tra 701 e 900 px le voci non ci stanno tutte: «Un assaggio» si raggiunge dalla home */
+@media (max-width: 900px) {
+  .site-nav a[href="/#assaggio"] { display: none; }
+}
 @media (max-width: 700px) {
   .site-nav .nav-hide-sm { display: none; }
 }
@@ -724,3 +729,85 @@ table.compare tr:last-child > * { border-bottom: 0; }
   .glass, .card, .faq details { background: rgba(28, 38, 52, .92); }
   .site-header { background: rgba(13, 19, 29, .96); }
 }
+
+/* Pagine delle curiosità (/curiosita/) */
+a.chip { text-decoration: none; }
+a.chip:hover { color: var(--c, var(--text)); background: color-mix(in srgb, var(--c, #fff) 26%, transparent); }
+.chips-more { text-align: center; margin: 28px 0 0; }
+
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 0 22px;
+  font-size: .9rem;
+  color: var(--text-3);
+}
+.breadcrumb li { margin: 0 !important; color: var(--text-3) !important; }
+.breadcrumb li + li::before { content: "›"; margin-right: 8px; color: var(--text-3); }
+.breadcrumb a { color: var(--text-2); text-decoration: none; }
+.breadcrumb a:hover { color: var(--amber); text-decoration: underline; }
+
+.cat-page > .wrap > .chip { margin: 0 0 14px; }
+.cat-page .lead, .cat-index .lead { color: var(--text-2); }
+.facts { display: grid; gap: 20px; margin-top: 36px; }
+.page .facts .card { margin: 0; }
+.fact-card { scroll-margin-top: 84px; }
+.fact-card .fact-kind {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 12px;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+.fact-card .fact-kind span {
+  display: inline-grid;
+  place-items: center;
+  min-width: 28px; height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 201, 115, .12);
+  border: 1px solid rgba(255, 201, 115, .35);
+  color: var(--amber);
+  font-size: .85rem;
+  letter-spacing: 0;
+}
+.page .fact-card h2 {
+  font-size: clamp(1.3rem, 3.2vw, 1.65rem);
+  line-height: 1.3;
+  margin: 0 0 14px;
+}
+.page .fact-card .fact-lead { color: var(--text); font-size: 1.08rem; }
+.page .fact-card .fact-block p { color: var(--text-2); }
+.page .fact-card .fact-block.hook p { color: var(--text); }
+.facts-note { margin-top: 28px; }
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  list-style: none;
+  padding: 0 !important;
+  margin: 36px 0;
+}
+.cat-card { position: relative; display: flex; flex-direction: column; margin: 0 !important; }
+.cat-card:hover { border-color: color-mix(in srgb, var(--c, #fff) 55%, transparent); }
+.cat-card .chip { align-self: flex-start; margin-bottom: 12px; }
+.page .cat-card h2 { font-size: 1.3rem; margin: 0 0 4px; }
+.cat-card h2 a { color: var(--text); text-decoration: none; }
+.cat-card h2 a::after { content: ""; position: absolute; inset: 0; border-radius: var(--radius); }
+.cat-card h2 a:focus-visible { outline: none; }
+.cat-card:focus-within { outline: 3px solid var(--amber); outline-offset: 3px; }
+.page .cat-card .cat-sub { font-size: .92rem; color: var(--text-3); margin: 0 0 12px; }
+.page .cat-card .cat-teaser { font-family: var(--serif); font-size: 1.05rem; line-height: 1.4; color: var(--text); flex: 1; }
+.page .cat-card .cat-more { margin: 0; font-weight: 600; font-size: .92rem; color: var(--c, var(--amber)); }
+.page .how { margin-top: 8px; }
+.page .how h2 { margin-top: 0; }
+
+.cat-page + .download, .cat-index + .download { padding-top: 0; }
+.more-cats { padding-top: 0; }
